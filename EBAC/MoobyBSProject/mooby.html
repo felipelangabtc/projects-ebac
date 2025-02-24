@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mooby</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+
+        body {
+            background-color: #f99435;
+        }
+        .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar-nav .nav-link.active {
+            color: white
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            background-color: #f99435;
+            padding-top: 70px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fc770a;
+        }
+
+        .custom-img {
+            height: 500px;
+        }
+
+        .card-img {
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Mooby</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <nav class="collapse navbar-collapse justify-content-end"  id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#publicacoes">Publicações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#criptomoedas">Criptomoedas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blockchain">Blockchain</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#airdrop">Airdrop</a>
+                    </li>
+                </ul>
+            </nav>
+            <button id="btn-checar-airdrop" type="button" class="btn btn-warning">Checar elegibilidade do airdrop.</button>
+            </div>
+        </div>   
+
+
+        
+    </header>
+    
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="1500" class="carousel-item active">
+                    <img class="d-block w-100 custom-img" src="https://conteudo.imguol.com.br/c/noticias/c2/2022/01/14/bitcoin-grafico-economia-1642179101668_v2_4x3.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Bitcoin</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="1500" class="carousel-item">
+                    <img class="d-block w-100 custom-img" src="https://classic.exame.com/wp-content/uploads/2022/05/Ethereum-em-queda.jpg?quality=70&strip=info&w=1024" />
+                    <div class="carousel-caption">
+                        <h2>Ethereum</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="1500" class="carousel-item">
+                    <img class="d-block w-100 custom-img" src="https://static.vecteezy.com/ti/vetor-gratis/p1/11119017-moeda-de-ouro-solana-no-grafico-de-acoes-criptomoeda-concorrencia-de-crescimento-do-mercado-de-acoes-tecnologia-de-mineracao-de-informacoes-de-big-data-futurista-de-pagamento-eletronico-de-internet-3d-gratis-vetor.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Solana</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="publicacoes">
+            <h2>Publicações</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card text-bg-dark">   
+                            <img class="card-img" src="https://conteudo.imguol.com.br/c/noticias/c2/2022/01/14/bitcoin-grafico-economia-1642179101668_v2_4x3.jpg"/>
+                            <article class="card-img-overlay">
+                                <h4 class="card-title">Bitcoin</h4>
+                                <h5 class="card-subtitle">O que é?</h5>
+                                <p class="card-text">O Bitcoin é uma moeda digital, que opera sem bancos ou governos intermediando as transações. Tudo acontece de forma segura e imutável por meio de uma tecnologia chamada blockchain.</p>
+                                <a href="#aba1" class="btn btn-primary">Saiba mais.</a>
+                            </article>
+                            <footer class="card-footer">
+                                Postado em <time>23/02/2025 às 19:23</time>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card text-bg-dark">   
+                            <img class="card-img" src="https://classic.exame.com/wp-content/uploads/2022/05/Ethereum-em-queda.jpg?quality=70&strip=info&w=1024"/>
+                            <article class="card-img-overlay">
+                                <h4 class="card-title">Ethereum</h4>
+                                <h5 class="card-subtitle">O que é?</h5>
+                                <p class="card-text">Ethereum é uma plataforma digital que permite criar aplicativos e contratos inteligentes de forma segura e sem intermediários, usando a tecnologia blockchain.</p>
+                                <a href="#aba2" class="btn btn-primary">Saiba mais</a>
+                            </article>
+                            <footer class="card-footer">
+                                Postado em <time>23/02/2025 às 20:43</time>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card text-bg-dark">   
+                            <img class="card-img" src="https://static.vecteezy.com/ti/vetor-gratis/p1/11119017-moeda-de-ouro-solana-no-grafico-de-acoes-criptomoeda-concorrencia-de-crescimento-do-mercado-de-acoes-tecnologia-de-mineracao-de-informacoes-de-big-data-futurista-de-pagamento-eletronico-de-internet-3d-gratis-vetor.jpg"/>
+                            <article class="card-img-overlay">
+                                <h4 class="card-title">Solana</h4>
+                                <h5 class="card-subtitle">O que é?</h5>
+                                <p class="card-text">Solana é uma plataforma blockchain de primeira camada rápida e de baixo custo, usada para criar aplicativos e transações digitais de forma eficiente e segura, usando a tecnologia blockchain.
+                                </p>
+                                <a href="#aba3" class="btn btn-primary">Saiba mais</a>
+                            </article>
+                            <footer class="card-footer">
+                                Postado em <time>23/02/2025 às 21:22</time>
+                            </footer>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="criptomoedas">
+            <h2>Criptomoedas</h2>
+            <div class="container">
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Bitcoin</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Ethereum</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Solana</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        <p>Você já ouviu falar de Bitcoin, mas ainda não entende bem o que é ou como funciona? Vamos simplificar! O Bitcoin é uma moeda digital, criada em 2009, que opera sem bancos ou governos intermediando as transações. Tudo acontece por meio de uma tecnologia chamada blockchain – pense nela como um livro-razão público e seguro, onde cada movimentação é registrada e verificada por uma rede global de computadores.
+                        Por que isso importa? O Bitcoin oferece uma alternativa ao sistema financeiro tradicional: transações rápidas, muitas vezes mais baratas, e acessíveis a qualquer pessoa com internet. Além disso, sua oferta é limitada (só existirão 21 milhões de bitcoins), o que faz muita gente compará-lo a um 'ouro digital'.
+                        Para quem está começando, o essencial é estudar antes de investir: entenda os riscos, pesquise carteiras seguras e comece com pouco. O mundo das criptomoedas é fascinante, mas exige curiosidade e cuidado. O que acha de dar o primeiro passo para explorar esse universo?</p>
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        <p>Se você já ouviu falar de criptomoedas como Bitcoin, mas quer entender o que torna o Ethereum especial, esse post é para você! Lançado em 2015, o Ethereum vai além de ser apenas uma moeda digital – ele é uma plataforma que permite criar soluções inovadoras usando a tecnologia blockchain.
+                        O grande diferencial do Ethereum é sua capacidade de rodar 'contratos inteligentes' (smart contracts). Imagine um acordo que se executa automaticamente quando certas condições são cumpridas, sem precisar de intermediários como bancos ou advogados. Isso abre portas para aplicações em finanças, jogos, NFTs e até votação digital – tudo de forma transparente e segura.
+                        Seu token, o Ether, é usado para 'alimentar' essa rede e também pode ser comprado ou vendido como investimento. Para quem está começando, o segredo é o mesmo: pesquise bem, entenda os riscos e explore aos poucos. O Ethereum é um exemplo de como a blockchain pode transformar o futuro – o que você acha dessa tecnologia?</p>
+                    </div>
+                    <div class="tab-pane" id="aba3">
+                        <p>Já ouviu falar da Solana, mas não sabe por onde começar? Vamos descomplicar! A Solana é uma blockchain lançada em 2020 que se destaca por sua velocidade e baixo custo. Enquanto outras redes podem ser lentas ou caras para processar transações, a Solana consegue lidar com milhares de operações por segundo – e com taxas mínimas. É como um 'supercomputador' descentralizado!
+                        Seu token nativo, o SOL, é usado para pagar essas transações e também atrai investidores. Mas o que torna a Solana interessante vai além disso: ela suporta desde aplicativos financeiros até NFTs e jogos digitais, tudo com eficiência impressionante. Isso a colocou no radar de desenvolvedores e empresas que buscam inovação.
+                        Para quem quer explorar, o conselho é básico: estude o projeto, entenda seus riscos e comece devagar. A Solana é uma das estrelas em ascensão no mundo das criptomoedas – você já tinha ouvido falar dela?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blockchain">
+            <h2>Blockchain</h2>
+            <div class="card text-bg-dark">
+                <img class="custom-img w-100" src="https://ajuda.foxbit.com.br/wp-content/uploads/2021/03/Blockchain.jpeg" />
+                <article class="card-img-overlay">
+                    <h4 class="card-title">O que é Blockchain e smart contracts?</h4>
+                    <p>Blockchain e smart contracts estão entre os temas mais comentados no mundo da tecnologia, mas o que eles realmente significam e por que importam? Se você é novo nesse universo, esse post é para você – vamos explorar isso juntos de forma simples e prática!
+                    Primeiro, o básico: a blockchain é uma tecnologia que funciona como um livro-razão digital, distribuído por uma rede de computadores ao redor do mundo. Cada 'página' desse livro registra informações – como transações, documentos ou dados – de maneira transparente, segura e impossível de alterar sem consenso. Pense em um cofre virtual: uma vez que algo é guardado lá, todos podem ver o que está dentro, mas ninguém consegue mexer sem permissão. Foi assim que o Bitcoin surgiu em 2009, usando a blockchain para criar uma moeda digital sem bancos ou governos no controle. Mas o potencial vai muito além das criptomoedas.
+                    É aí que entram os smart contracts, ou 'contratos inteligentes'. Eles são como acordos digitais programados para se executarem automaticamente quando certas condições são cumpridas. Imagine que você quer comprar um carro usado: o smart contract pode ser configurado para liberar o pagamento ao vendedor só depois que o documento de transferência estiver registrado – tudo feito na blockchain, sem precisar de cartórios, advogados ou meses de espera. Isso elimina intermediários, reduz custos e aumenta a confiança, porque o processo é transparente e à prova de manipulação.
+                    Na prática, essa combinação está transformando diversos setores. Em finanças, bancos estão testando blockchain para transferências internacionais mais rápidas e baratas, enquanto smart contracts permitem empréstimos automáticos sem burocracia. Na logística, empresas rastreiam produtos – como frutas ou remédios – do produtor ao consumidor, garantindo origem e qualidade. No mercado de arte, os NFTs (tokens únicos registrados na blockchain) usam smart contracts para autenticar e vender obras digitais. Até em eleições, há experimentos com blockchain para votos seguros e verificáveis.
+                    Para quem está começando, o mais fascinante é perceber como essas tecnologias abrem portas. Elas descentralizam o poder, dando mais controle aos indivíduos, e criam soluções que antes pareciam impossíveis. Claro, há desafios: a complexidade técnica, a volatilidade das criptomoedas e a necessidade de regulação. Mas o movimento já começou, e entender esses conceitos é o primeiro passo para acompanhar – ou até participar – dessa revolução.
+                    O que acha disso tudo? Já imaginou como blockchain e smart contracts poderiam impactar sua área ou dia a dia?</p>
+                </article>
+            </div>
+        </section>
+        <section id="airdrop">
+            <h2>Airdrop</h2>
+            <div class="card text-bg-dark">
+                <img class="custom-img w-100" src="https://media.seudinheiro.com/uploads/2024/02/Artes-Renan-Sousa3-715x402.jpg" />
+                <article class="card-img-overlay">
+                    <h4 class="card-title">O que é Blockchain e smart contracts?</h4>
+                    <p>Está começando a explorar o mundo das criptomoedas e ouviu falar em 'airdrops'? Vamos descomplicar! No universo cripto, um airdrop é como um brinde: projetos distribuem tokens ou moedas digitais gratuitamente para usuários, geralmente para promover uma nova criptomoeda, atrair atenção ou recompensar a comunidade.
+                        Como funciona? Imagine que uma empresa lança um aplicativo e, para divulgá-lo, oferece vouchers grátis a quem se inscrever. Nos airdrops, você pode receber tokens só por ter uma carteira digital, participar de redes sociais do projeto (como seguir no Twitter ou entrar em grupos) ou testar uma plataforma. O objetivo é criar buzz e trazer mais pessoas para o ecossistema. Por exemplo, projetos famosos como Uniswap já fizeram airdrops, distribuindo tokens que depois valorizaram bastante.
+                        Para iniciantes, parece uma ótima oportunidade – e pode ser! Mas há cuidados importantes: nem todo airdrop é confiável. Alguns são golpes (scams) que tentam roubar dados ou fazer você gastar antes de receber algo. A dica de ouro é pesquisar o projeto, verificar sua legitimidade e nunca compartilhar chaves privadas da sua carteira. Quer fazer parte de um projeto cripto promissor e ainda ganhar tokens grátis? A comunidade Mooby está abrindo as portas com o airdrop do token $MOOBY – uma oportunidade única para quem quer mergulhar no mundo das criptomoedas! 
+                        O que é o $MOOBY? É o token oficial da Mooby, uma comunidade vibrante que está construindo algo especial no ecossistema cripto. Para participar do airdrop e garantir sua parte, você precisa adquirir um dos passes da Mooby – eles são o seu ingresso para esse universo. Esses passes não só te dão acesso à comunidade, mas também te qualificam para receber os tokens $MOOBY que serão distribuídos gratuitamente.
+                        Como começar? Simples: adquira um passe da Mooby (disponível em plataformas confiáveis – pesquise e verifique!), junte-se à comunidade e fique de olho nas instruções oficiais para o airdrop. É uma chance de explorar um projeto novo, aprender mais sobre cripto e, quem sabe, fazer parte de algo que pode crescer muito.</p>
+                </article>
+            </div>
+        </section>
+    
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div data-bs-autohide="false" class="toast" id="mensagens-alerta">
+            <header class="toast-header">
+                <strong>Parabéns! Você está elegível para o airdrop.</strong>
+            </header>
+            <div class="toast-body">
+                Você possui 500 tokens $MOOBY para resgatar.
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dismiss="toast" class="btn btn-danger">
+                        Descartar.
+                    </button>
+                    <button data-bs-dismiss="toast" class="btn btn-success">
+                        Resgatar.
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>    
+    
+</body>
+
+<script src="lib/bootstrap.bundle.min.js"></script>
+<script>
+    const ativadorToast = document.getElementById('btn-checar-airdrop')
+    const mensagem = document.getElementById('mensagens-alerta')
+
+    if(ativadorToast){
+        ativadorToast.addEventListener('click', function() {
+            const toast = new bootstrap.Toast(mensagem)
+            toast.show()
+        })
+    }
+</script>
+
+</html>
