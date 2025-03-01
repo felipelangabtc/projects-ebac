@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Mooby",
             about: "About Mooby",
             community: "Mooby Community",
-            collections: "NFT Collections",
+            collections: "Open Editions",
             contact: "Contact Us",
             aboutText: "",
             communityTitle: "Mooby Community",
-            collcetcionsTitle: "NFT Collections",
+            collectionsTitle: "NFT Collections",
             contactTitle: "Contact Us."
         },
         pt: {
