@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mooby</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Mooby</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a id="about-link" href="#sobre" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a Mooby
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a id="community-link" href="#community" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Comunidade Mooby
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a id="collections-link" href="#collections" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Coleções
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a id="contact-link" href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="langchange" class="dropdown">
+                <button id="languageButton" class="btn btn-primary dropdown-toggle text-colored fw-bold" type="button" data-bs-toggle="dropdown">
+                    EN
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item language-btn" href="#" data-lang="en">EN</a></li>
+                    <li><a class="dropdown-item language-btn" href="#" data-lang="pt">PT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner width: 100vw">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://img.decrypt.co/insecure/rs:fit:3840:0:0:0/plain/https://cdn.decrypt.co/wp-content/uploads/2024/01/Nifty-Island-2-gID_7.png" alt="Nifty Island">
+                </div>
+                <div class="carousel-item" data-bs-interval="31000">
+                    <img class="d-block w-100" src="images/nifty1.jpg" alt="Metaverso">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://venturebeat.com/wp-content/uploads/2024/01/nifty-2.jpg" alt="Nifty Island">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>  
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>  
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <section id="sobre">
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/mooby.jpg" class="d-block w-100 rounded" alt="Espaço interno">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a Mooby</span></h2>
+                            <p>
+                                A Mooby é uma comunidade e plataforma baseada em Web3 que busca moldar o futuro da interação online e da economia descentralizada! Nossa comunidade está totalmente integrada com tecnologias Web3, como blockchain, criptomoedas, contratos inteligentes, metaverso e muito mais.
+                                Na Mooby, acreditamos no poder da descentralização para empoderar indivíduos e criar um ambiente digital verdadeiramente inclusivo e equitativo. Nossa visão é construir uma comunidade vibrante onde as pessoas possam se conectar, colaborar e prosperar de maneiras inovadoras.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">a comunidade</span></h3>
+                            <p>
+                                Junte-se a nós para fazer parte de uma revolução na web, onde liberdade, transparência e colaboração estão no centro de tudo. No Mooby, estamos ajudando a construir o futuro da internet, e queremos que você faça parte dessa jornada emocionante. Conecte-se, crie e inove! Estamos construindo algo verdadeiramente extraordinário.
+                                <br><br> Venha fazer parte da comunidade Mooby! Faça o mint do pass através da plataforma <a href="https://app.airgang.io/mooby">AirGang</a>. 🚀
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <section id="community" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row mt-4">
+                    <h2 class="section-title text-center">Comunidade <span class="text-colored">Mooby</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/nifty1.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Comunidade
+                        </h3>
+                        <p>Atualmente, o Mooby possui um espaço dentro do metaverso Nifty Island, um ambiente interativo onde os membros podem se encontrar e se divertir.
+                            Os membros da comunidade Mooby aproveitam diversos benefícios, como:</p>
+                        <ul>
+                            <li>Resgate gratuito de vários NFTs lançados no metaverso Nifty Island.</li>
+                            <li>Participação em sorteios, distribuição de lucros e airdrops.</li>
+                            <li>Acesso ao Discord, à área de membros e aos futuros lançamentos na plataforma Mooby.</li>
+                        </ul>
+                        </div>
+                    <div class="col-md-4">
+                        <img src="images/nifty2.jpeg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            Airdrop
+                        </h3>
+                        <p>Para promover o engajamento da comunidade, o Nifty Island conduziu uma campanha de "play-to-airdrop" (jogue para receber airdrop) que durou nove meses. Durante esse período, os participantes puderam acumular pontos e recursos no jogo, chamados de "Blooms", que determinaram sua elegibilidade e a quantidade de tokens ISLAND recebidos no airdrop. Os tokens ISLAND podem ser reivindicados diretamente no site oficial do Nifty Island. Além de possuí-los, os detentores podem optar por "staking" (delegar) seus tokens para obter benefícios adicionais.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://venturebeat.com/wp-content/uploads/2024/01/nifty-2.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Jogos
+                        </h3>
+                        <p>
+                            O Nifty Island também é um espaço interativo e dinâmico onde os jogadores podem explorar, criar e competir em diferentes tipos de jogos. Seja para se divertir com amigos, desafiar a comunidade ou até mesmo ganhar recompensas, as possibilidades de jogos dentro do Nifty Island são imensas!
+                            <br>A comunidade Mooby já faz parte do Nifty Island e pretende trazer novos minigames exclusivos para os membros! Em breve, teremos desafios interativos com recompensas especiais para os holders de Mooby NFTs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="collections" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        NFTs gratuitos para <span class="text-colored">membros Mooby</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#open-editions-1" class="fw-bold text-start nav-link text-colored active">Mooby Pass #1</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#open-editions-2" class="fw-bold text-start nav-link text-colored">Mooby Pass #9</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#open-editions-3" class="fw-bold text-start nav-link text-colored">Mooby Pass #17</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#open-editions-4" class="fw-bold text-start nav-link text-colored">Mooby Pass #25</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#open-editions-5" class="fw-bold text-start nav-link text-colored">Mooby Pass #33</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="open-editions-1">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #1">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #1</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #2">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #2</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #3">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #3</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #4">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #4</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #5">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #5</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #6">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #6</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #7">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #7</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #8">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #8</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="open-editions-2">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #9">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #9</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #10">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #10</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #3">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #11</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #4">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #12</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #5">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #13</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #6">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #14</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #7">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #15</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #8">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #16</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="open-editions-3">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #1">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #17</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #2">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #18</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #3">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #19</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #4">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #20</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #5">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #21</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #6">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #22</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #7">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #23</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #8">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #24</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="open-editions-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #1">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #25</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #2">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #26</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #3">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #27</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #4">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #28</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #5">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #29</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #6">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #30</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #7">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #31</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #8">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #32</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="open-editions-5">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #1">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #33</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #2">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #34</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #3">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #35</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #4">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #36</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #5">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #37</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #6">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #38</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #7">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #39</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/mooby.jpg" alt="Mooby Pass #8">
+                                        <h5 class="text-colored fw-bold mt-2">Mooby Pass #40</h5>
+                                        <p>Esse NFT dá acesso à comunidade Mooby.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco.</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-lable fw-bold text-colored">Seu nome no Nifty Island:</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-lable fw-bold text-colored">Seu e-mail:</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-lable fw-bold text-colored">Seu telefone (opcional):</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-lable fw-bold text-colored">Sua mensagem:</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="https://x.com/mooby_io">
+                                        <i class="bi bi-twitter text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="https://www.instagram.com/mooby.io">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="https://discord.gg/xKHMCcFZ4V">
+                                        <i class="bi bi-discord text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Nifty Island
+                            </h3>
+                            <div class="row">
+                                <div class="col-md-5 d-md-flex">
+                                    <p>
+                                        <h6 class="text-colored me-3 text-center fw-bold">
+                                            Mooby Comm. HQ
+                                            <a href="https://niftyis.land/FelipeLangaBTC/1?ref=FelipeLangaBTC">
+                                                <img class="pt-1" style="max-width: 150px;" src="images/mooby.jpg" alt="Mooby Comm. HQ">
+                                            </a>
+                                        </h6>
+                                    </p>
+                                    <p>
+                                        <h6 class="text-colored text-center fw-bold">
+                                            Nostalgic Island
+                                            <a href="https://niftyis.land/FelipeLangaBTC/0?ref=FelipeLangaBTC">
+                                                <img class="pt-1" style="max-width: 150px;" src="images/mooby.jpg" alt="Nostalgic Island">
+                                            </a> 
+                                        </h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
