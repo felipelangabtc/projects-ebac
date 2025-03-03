@@ -90,23 +90,8 @@
     border: 2px solid #ff7708;
     transition: all ease 0.5s;
   }
-  .projects-list-item a:hover,
-  .return-vp a:hover {
+  .projects-list-item a:hover {
     color: #ff7708;
     background-color: transparent;
   }
   
-.return-vp a {
-    text-decoration: none;
-    background-color: #ff7708;
-    display: block;
-    padding: 4px 4px;
-    margin-bottom: 8px;
-    text-align: center;
-    color: #000000;
-    font-weight: bold;
-    border-radius: 30px;
-    border: 1px solid #ff7708;
-    transition: all ease 0.5s;
-
-}
