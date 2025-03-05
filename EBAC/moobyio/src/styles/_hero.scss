@@ -1,7 +1,7 @@
 @use 'variaveis';
 
 .hero {
-    position: relative;
+
     display: flex;
     align-items: center;
 
@@ -11,6 +11,15 @@
     background-image: url(../images/bg/hero1.png);
     text-align: center;
     background-size: cover;
+
+    @media (max-width: 768px) {
+        margin-top: -50px;
+    }
+
+    .button {
+        margin-top: 1vw;
+        margin-bottom: 4px;
+    }
     
     &__content {
         max-width: 640px;
@@ -36,7 +45,7 @@
             margin-bottom: 12px;
 
             &:last-child {
-                margin-top: 12px;
+                margin-top: 5px;
             }
         }
 

@@ -1,5 +1,8 @@
+@use 'variaveis';
+
 .plans {
     padding: 5.6vw;
+    
 
     h2 {
         text-align: center;
@@ -9,12 +12,19 @@
         list-style: none;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         margin-top: 50px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
 
         &__item {
             text-align: center;
+            justify-content: center;
+            align-items: center;
             padding: 60px 44px 44px;
-            max-width: 380px;
+            max-width: 640px;
             width: 100%;
 
             &:nth-child(2) {
@@ -34,7 +44,12 @@
             }
 
             .button {
-                background-color: rgb(255, 132, 0);
+                background-color: variaveis.$corTextoSecundario;
+            }
+
+            @media (max-width: 768px) {
+                display: block;
+                align-items: center;
             }
         }
     }
