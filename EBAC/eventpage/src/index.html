@@ -8,18 +8,85 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/logos/moobysemfundo.png" alt="">
             <p class="hero__text">
-                The Mooby event on Nifty Island starts in <br> 30d 20h 15m 59s
+                The Mooby event on Nifty Island starts in <span id="counter"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Local</b>
+                        Mooby Comm. HQ
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Rewards</b>
+                        Blooms and $ISLAND
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>
+                            When
+                        </b>
+                        April 5, 2025 at 7:00 PM 
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    More details
+                </a>
+            </div>
         </div>
     </header>
     
+    <section class="event event--quests">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Quests</h2>
+                <p class="event__details__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium dolorem eius error distinctio laboriosam quisquam autem blanditiis facere, eos consectetur inventore! Delectus dolor totam quae nulla magni consequatur provident porro.
+                </p>
+            </div>
+            <img class="event__image" src="./images/bg/nifty1.png" alt="">
+        </div>
+    </section>
+    <section class="event event--games event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Games</h2>
+                <p class="event__details__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium dolorem eius error distinctio laboriosam quisquam autem blanditiis facere, eos consectetur inventore! Delectus dolor totam quae nulla magni consequatur provident porro.
+                </p>
+            </div>
+            <img class="event__image" src="./images/bg/nifty3.png" alt="">
+        </div>
+    </section>
+    <section class="event event--island">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">$ISLAND</h2>
+                <p class="event__details__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium dolorem eius error distinctio laboriosam quisquam autem blanditiis facere, eos consectetur inventore! Delectus dolor totam quae nulla magni consequatur provident porro.
+                </p>
+            </div>
+            <img class="event__image" src="./images/bg/nifty2.png" alt="">
+        </div>
+    </section>
+    <section class="event event--blooms event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Blooms</h2>
+                <p class="event__details__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium dolorem eius error distinctio laboriosam quisquam autem blanditiis facere, eos consectetur inventore! Delectus dolor totam quae nulla magni consequatur provident porro.
+                </p>
+            </div>
+            <img class="event__image" src="./images/bg/nifty22.png" alt="">
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
