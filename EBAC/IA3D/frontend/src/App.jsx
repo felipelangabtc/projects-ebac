@@ -10,7 +10,7 @@ function App() {
     setLoading(true)
     setFile(null)
     try {
-      const res = await axios.post('https://SEU_BACKEND/render_URL/generate', {
+      const res = await axios.post('https://ia3dbackend.onrender.com/generate', {
         prompt,
       })
       setFile(res.data.file)
