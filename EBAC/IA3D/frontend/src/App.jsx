@@ -34,7 +34,7 @@ function App() {
       </button>
       {file && (
         <div style={{ marginTop: '1rem' }}>
-          <a href={`https://shap-e-backend.onrender.com/outputs/${file}`} download>
+          <a href={`https://ia3dbackend.onrender.com/outputs/${file}`} download>
             Baixar {file}
           </a>
         </div>
