@@ -1,0 +1,25 @@
+"use strict";
+const alunos = [
+    {
+        nome: "Felipe",
+        cursos: ["Front-end", "UX/UI"],
+        idade: 30,
+    },
+    {
+        nome: "Sara",
+        cursos: ["Front-end", "Python"],
+        idade: 21,
+    },
+];
+alunos.push({
+    nome: "Julia",
+    cursos: ["Arquitetura"],
+    idade: 29,
+});
+const novoAluno = {
+    nome: "Lucas",
+    idade: 32,
+};
+function exibeAluno(aluno) {
+    console.log(aluno.nome);
+}
